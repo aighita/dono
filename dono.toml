@@ -9,3 +9,5 @@ low = "#0e4429"
 medium = "#006d32"
 high = "#26a641"
 max = "#39d353"
+
+week_start_day = "Sunday"

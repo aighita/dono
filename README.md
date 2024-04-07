@@ -2,10 +2,10 @@
 <h1>Dono</h1>
 <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/jervw/dono/rust.yml">
 <img alt="GitHub" src="https://img.shields.io/github/license/jervw/dono">
-<img alt="Crates.io" src="https://img.shields.io/crates/v/dono-cli">
+<img alt="Crates.io" src="https://img.shields.io/crates/v/dono-cli-contributions">
 
 <p>A customizable CLI tool to show your GitHub contributions graph in your terminal</p>
-<img src=preview.png>
+<img src=preview.jpeg>
 
 </div>
 
@@ -14,12 +14,12 @@
 ### Cargo package
 
 ```
-cargo install dono-cli
+cargo install dono-cli-contributions
 ```
 
 ### Build from source
 ```sh
-git clone https://github.com/jervw/dono
+git clone https://github.com/aighita/dono
 cd dono
 cargo build --release
 cargo run
@@ -46,13 +46,14 @@ The location is `$XDG_CONFIG_HOME/dono/dono.toml`.
 ```
 A CLI tool to show your GitHub contributions
 
-Usage: dono <user_name>
+Usage: dono [OPTIONS] <user_name>
 
 Arguments:
   <user_name>  GitHub user name
 
 Options:
   -h, --help     Print help information
+  -w, --week-start-day <WEEK_START_DAY> [default: Sunday]
   -V, --version  Print version information
 ```
 
@@ -61,7 +62,6 @@ Options:
 Please create an issue :)
 
 ## TODOs
-- [ ] Week starts on monday setting
 - [ ] Display stats (e.g. streaks, highest contributions)
 - [ ] Custom queries
 
